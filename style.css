@@ -1,0 +1,429 @@
+/* =========================================
+   Estilos Gerais e Globais
+   ========================================= */
+
+body {
+    margin: 0;
+    padding: 0;
+   background-color:  rgb(17, 17, 17);
+}
+
+span {
+    font-weight: 200;
+}
+
+/* =========================================
+   Cabeçalho
+   ========================================= */
+.cabecalho {
+    height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    box-sizing: border-box;
+    max-height: 390px;
+}
+
+.cabecalho__logo {
+    height: 32px;
+}
+
+.cabecalho__acoes {
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho__botao--inscricao {
+    height: 40px;
+    width: 77px;
+    border: none;
+    border-radius: 5rem;
+}
+
+.cabecalho__botao--menu {
+    height: 24px;
+    width: 24px;
+}
+
+/* =========================================
+   Seção Destaque (Hero)
+   ========================================= */
+.secao-destaque {
+    padding: 48px 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.secao-destaque__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.secao-destaque__titulo {
+    font-size: 38px;
+    line-height: 40px;
+    color: white;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: -1.27px;
+}
+
+.secao-destaque__descricao {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    line-height: 25.6px;
+    font-weight: 600;
+}
+
+.secao-destaque__botao {
+    width: 116px;
+    height: 40px;
+    font-weight: 800;
+    border-radius: 5rem;
+    border: none;
+}
+
+.secao-destaque__video {
+    height: 342px;
+    width: 342px;
+}
+
+/* =========================================
+   Seção Estatísticas (Texto)
+   ========================================= */
+.secao-estatisticas {
+    padding: 48px 24px;
+    color: white;
+}
+
+.secao-estatisticas__cabecalho {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    line-height: 25.6px;
+    font-weight: 600;
+}
+
+.secao-estatisticas__etiqueta {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.secao-estatisticas__titulo {
+    margin-top: 8px;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 40px;
+}
+
+.secao-estatisticas__descricao {
+    margin: 0;
+    line-height: 25.6px;
+}
+
+.secao-estatisticas__botao {
+    width: 148px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 5rem;
+    font-weight: 800;
+}
+
+/* =========================================
+   Carrossel de Estatísticas
+   ========================================= */
+.carrossel-estatisticas {
+    padding: 48px 24px;
+}
+
+.swiper { 
+    width: 100%;
+    height: 455px;
+}
+
+.cartao-estatistica.swiper-slide {
+    height: 455px;
+    width: 338px;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* Modificadores de Cores dos Cartões */
+.cartao-estatistica--azul {
+    background-color: rgb(89, 160, 246);
+}
+
+.cartao-estatistica--verde {
+    background-color: rgb(149, 201, 13);
+}
+
+.cartao-estatistica--roxo {
+    background-color: rgb(150, 145, 255);
+}
+
+.cartao-estatistica--amarelo {
+    background-color: rgb(255, 200, 98);
+}
+
+.cartao-estatistica--rosa {
+    background-color: rgb(253, 138, 126);
+}
+
+.cartao-estatistica__corpo {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.cartao-estatistica__icone {
+    height: 43px;
+    margin-bottom: 5px;
+}
+
+.cartao-estatistica__numero {
+    font-size: 45px;
+    line-height: 110%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    margin: 0;
+}
+
+.cartao-estatistica__rotulo {
+    font-size: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.cartao-estatistica__descricao {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 10px 16px 30px 5px;
+    box-sizing: border-box;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+/* Controles de Navegação do Carrossel */
+.controles-navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;  
+}
+
+.controles-navegacao__botao {
+    background-color: white;
+    border: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+.controles-navegacao__botao:hover {
+    cursor: pointer;
+    background-color: rgba(75, 75, 75, 0.696);
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+
+/* =========================================
+   Seção de Histórias / Formatos
+   ========================================= */
+.secao-historias {
+    padding: 0 24px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.secao-historias__cabecalho {
+    padding: 0 0 48px;
+    margin: 30px 0;
+}
+
+.secao-historias__etiqueta {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.secao-historias__titulo {
+    margin-top: 8px;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 40px;
+}
+
+.secao-historias__descricao {
+    margin: 15px 0;
+}
+
+.secao-historias__botao {
+    width: 148px;
+    height: 40px;
+    border-radius: 5rem;
+    border: none;
+    font-weight: 800;
+}
+
+.secao-historias__filtros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.secao-historias__filtro-botao {
+    padding: 10px 20px;
+    border-radius: 5rem;
+    height: 42px;
+    border: none;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
+
+.swiper-dois { 
+    width: 100%;
+}
+
+.cartao-midia.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+.cartao-midia__imagem {
+    width: 160px;
+    height: 327px;
+}
+
+/* =========================================
+   Seção de Anúncios de Vídeo
+   ========================================= */
+.secao-video-promocional {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 24px 60px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.secao-video-promocional__titulo {
+    font-size: 32px;
+    margin: 0;
+}
+
+.secao-video-promocional__descricao {
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.secao-video-promocional__botao {
+    width: 122px;
+    height: 40px;
+    border-radius: 5rem;
+    border: none;
+    font-weight: 800;
+    margin-top: 18px;
+}
+
+/* =========================================
+   Seção de Campanhas
+   ========================================= */
+.secao-campanhas {
+    padding: 48px 24px;
+}
+
+.secao-campanhas__cabecalho {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 0 48px;
+    box-sizing: border-box;
+}
+
+.secao-campanhas__titulo {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.secao-campanhas__descricao {
+    margin: 0;
+}
+
+.secao-campanhas__botao {
+    width: 122px;
+    height: 40px;
+    border: none;
+    border-radius: 5rem;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.cartao-campanha {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.cartao-campanha__imagem {
+    width: 342px;
+    height: 228px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.cartao-campanha__conteudo {
+    padding-bottom: 60px;
+    
+}
+
+.cartao-campanha__titulo {
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.cartao-campanha__descricao {
+    margin: 10px 0 20px;
+
+}
+
+.cartao-campanha__botao {
+    border-radius: 50%;
+    border: none;
+    height: 24px;
+    width: 24px;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   Responsividade
+   ========================================= */
+@media screen and (min-width: 768px) {
+    .secao-destaque__video {
+        height: 688px;
+        width: 100%;
+    }
+
+    .secao-destaque {
+        padding: 48px 40px;
+    }
+}

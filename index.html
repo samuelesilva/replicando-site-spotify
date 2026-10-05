@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Cabeçalho Principal -->
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="img/logo-spotify.png" alt="logo-spotify">
+        <div class="cabecalho__acoes">
+            <button class="cabecalho__botao cabecalho__botao--inscricao">Sing Up</button>
+            <button class="cabecalho__botao cabecalho__botao--menu">///</button>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+        <!-- Seção de Destaque / Principal -->
+        <section class="secao-destaque">
+            <div class="secao-destaque__texto">
+                <h1 class="secao-destaque__titulo">Seus anúncios rendem mais <span>no Spotify</span></h1>
+                <p class="secao-destaque__descricao">Anunciando no Spotify você tem mais oportunidades para alcançar
+                    seu público, mais atenção à sua mensagem e mais sucesso em todo o funil, além de formas de compra
+                    flexíveis para alcançar seus objetivos de negócios.</p>
+                <button class="secao-destaque__botao">Start now</button>
+            </div>
+
+            <video autoplay loop playsinline class="secao-destaque__video">
+                <source src="https://videos.ctfassets.net/tvhwpwv117no/7rFO7S7Q7iKlkQjvK3YrYS/73775d480eb9cd054b982f3c418ac78c/MockBrandHomepage.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- Seção de Números / Apresentação -->
+        <section class="secao-estatisticas">
+            <div class="secao-estatisticas__cabecalho">
+                <span class="secao-estatisticas__etiqueta">Por que escolher o Spotify?</span>
+                <h2 class="secao-estatisticas__titulo">Os números não mentem</h2>
+                <p class="secao-estatisticas__descricao">Quando os anúncios chegam no momento certo, eles não atrapalham, eles
+                    atraem. É por isso que os anúncios do Spotify são lembrados com mais frequência e de forma mais
+                    positiva do que em outras plataformas.¹</p>
+                <button class="secao-estatisticas__botao">Descubra mais</button>
+            </div>
+        </section>
+
+        <!-- Seção de Carrossel de Cartões de Estatísticas -->
+        <section class="carrossel-estatisticas">
+            <div class="swiper">
+                <div class="swiper-wrapper" id="trilho">
+                    <div class="swiper-slide cartao-estatistica cartao-estatistica--azul">
+                        <div class="cartao-estatistica__corpo">
+                            <img class="cartao-estatistica__icone" src="img/logo-preta.png" alt="">
+                            <h3 class="cartao-estatistica__numero">+777 milhões</h3>
+                            <h3 class="cartao-estatistica__rotulo">de usuários ativos mensais</h3>
+                        </div>
+                        <p class="cartao-estatistica__descricao">Do RapCaviar ao pirate metal, tem para todos os gostos.⁶</p>
+                    </div>
+
+                    <div class="swiper-slide cartao-estatistica cartao-estatistica--verde">
+                        <div class="cartao-estatistica__corpo">
+                            <img class="cartao-estatistica__icone" src="img/logo-preta.png" alt="">
+                            <h3 class="cartao-estatistica__numero">15%</h3>
+                            <span class="cartao-estatistica__rotulo">mais feliz</span>
+                        </div>
+                        <p class="cartao-estatistica__descricao">As pessoas relatam se sentirem mais felizes e relaxadas após ouvir
+                            Spotify do que ao rolar o feed nas redes sociais.³</p>
+                    </div>
+
+                    <div class="swiper-slide cartao-estatistica cartao-estatistica--roxo">
+                        <div class="cartao-estatistica__corpo">
+                            <img class="cartao-estatistica__icone" src="img/logo-preta.png" alt="">
+                            <h3 class="cartao-estatistica__numero">40%</h3>
+                            <h3 class="cartao-estatistica__rotulo">Desempenho melhor</h3>
+                        </div>
+                        <p class="cartao-estatistica__descricao">Comparado com os benchmarks da indústria de áudio, nós arrasamos.⁴</p>
+                    </div>
+
+                    <div class="swiper-slide cartao-estatistica cartao-estatistica--amarelo">
+                        <div class="cartao-estatistica__corpo">
+                            <img class="cartao-estatistica__icone" src="img/logo-preta.png" alt="">
+                            <h3 class="cartao-estatistica__numero">93%</h3>
+                            <h3 class="cartao-estatistica__rotulo">engajamento transferido</h3>
+                        </div>
+                        <p class="cartao-estatistica__descricao">Quando as pessoas estão imersas em suas músicas ou podcasts favoritos,
+                            esse engajamento é transferido para o seu anúncio.⁵</p>
+                    </div>
+
+                    <div class="swiper-slide cartao-estatistica cartao-estatistica--rosa">
+                        <div class="cartao-estatistica__corpo">
+                            <img class="cartao-estatistica__icone" src="img/logo-preta.png" alt="">
+                            <h3 class="cartao-estatistica__numero">5</h3>
+                            <span class="cartao-estatistica__numero">vezes</span>
+                            <h3 class="cartao-estatistica__rotulo">mais lembrança dos anúncios</h3>
+                        </div>
+                        <p class="cartao-estatistica__descricao">Nossos ouvintes estão se lembrando dos anúncios tal como a Geração Z
+                            recorda dos anos 2000.²</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controles-navegacao">
+                <button class="controles-navegacao__botao controles-navegacao__botao--anterior">&#10094;</button>
+                <button class="controles-navegacao__botao controles-navegacao__botao--proximo">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Seção de Histórias / Formatos de Anúncio -->
+        <section class="secao-historias">
+            <div class="secao-historias__cabecalho">
+                <span class="secao-historias__etiqueta">Anuncie com a gente</span>
+                <h2 class="secao-historias__titulo">Conte sua história através da visão e do som</h2>
+                <p class="secao-historias__descricao">Cative novos públicos com formatos de anúncios interessantes que ajudarão
+                    a atingir os objetivos do seu negócio.</p>
+                <button class="secao-historias__botao">Descubra mais</button>
+            </div>
+
+            <div class="secao-historias__filtros">
+                <button class="secao-historias__filtro-botao" onclick="navegarParaSlide(0)">Video</button>
+                <button class="secao-historias__filtro-botao" onclick="navegarParaSlide(1)">Audio</button>
+                <button class="secao-historias__filtro-botao" onclick="navegarParaSlide(2)">Podcast</button>
+            </div>
+
+            <div class="swiper-dois">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide cartao-midia">
+                        <img class="cartao-midia__imagem" src="img/slidevideo.webp" alt="">
+                    </div>
+                    <div class="swiper-slide cartao-midia">
+                        <img class="cartao-midia__imagem" src="img/slideaudio.webp" alt="">
+                    </div>
+                    <div class="swiper-slide cartao-midia">
+                        <img class="cartao-midia__imagem" src="img/slidepodcast.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Anúncios de Vídeo -->
+        <section class="secao-video-promocional">
+            <h2 class="secao-video-promocional__titulo">Anúncios de vídeo</h2>
+            <p class="secao-video-promocional__descricao">O Spotify também faz vídeos! Com o storytelling visual no Spotify, você
+                interage com os usuários quando eles estão olhando para a tela, aproveitando ao máximo os momentos de
+                foco.</p>
+            <button class="secao-video-promocional__botao">Saiba mais</button>
+        </section>
+
+        <!-- Seção de Campanhas -->
+        <section class="secao-campanhas">
+            <div class="secao-campanhas__cabecalho">
+                <h2 class="secao-campanhas__titulo">Faça suas campanhas repercutirem</h2>
+                <p class="secao-campanhas__descricao">Com o gerenciador de anúncios do Spotify, é muito fácil fazer
+                    publicidade. Confira a nossa página
+                    Começar para saber como.</p>
+                <button class="secao-campanhas__botao">Saiba mais</button>
+            </div>
+
+            <div class="cartao-campanha">
+                <img class="cartao-campanha__imagem" src="img/img-objetivo.webp" alt="Objetivo">
+                <div class="cartao-campanha__conteudo">
+                    <span class="cartao-campanha__titulo">É bom ter objetivos</span>
+                    <p class="cartao-campanha__descricao">O gerenciador de anúncios do Spotify ajudará você a identificar o objetivo
+                        de anúncio certo para conquistar os resultados importantes para seu negócio.
+                    </p>
+                    <button class="cartao-campanha__botao">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="cartao-campanha">
+                <img class="cartao-campanha__imagem" src="img/img-lugar.webp" alt="Lugar">
+                <div class="cartao-campanha__conteudo">
+                    <span class="cartao-campanha__titulo">Encontre seu público</span>
+                    <p class="cartao-campanha__descricao">Com nossas ferramentas de segmentação, você encontra e alcança seus clientes
+                        em diversos dispositivos, momentos e tipos de anúncio.
+                    </p>
+                    <button class="cartao-campanha__botao">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="cartao-campanha">
+                <img class="cartao-campanha__imagem" src="img/img-acompanhamento.webp" alt="Acompanhamento">
+                <div class="cartao-campanha__conteudo">
+                    <span class="cartao-campanha__titulo">O sucesso é mensurável</span>
+                    <p class="cartao-campanha__descricao">Nossas ferramentas de medição são abrangentes para que você acompanhe o
+                        desempenho das suas campanhas.</p>
+                    <button class="cartao-campanha__botao">&#10095;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        // Swiper de Estatísticas
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            loop: false,
+            breakpoints: {
+                601: {
+                    slidesPerView: 2,
+                    spaceBetween: 24
+                },
+                1025: {
+                    slidesPerView: 3,
+                    spaceBetween: 32
+                }
+            },
+            navigation: {
+                nextEl: '.controles-navegacao__botao--proximo',
+                prevEl: '.controles-navegacao__botao--anterior',
+            },
+        });
+
+        // Swiper de Formatos / Histórias
+        const swiperDois = new Swiper('.swiper-dois', {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            loop: false,
+            effect: 'cards',
+            cardsEffect:{
+                  slideShadows: false
+            }
+          
+        });
+
+        function navegarParaSlide(numeroDoSlider) {
+            swiperDois.slideTo(numeroDoSlider);
+        }
+    </script>
+</body>
+
+</html>

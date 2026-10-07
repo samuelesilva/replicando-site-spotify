@@ -404,7 +404,6 @@ span {
 
 .cartao-campanha__descricao {
     margin: 10px 0 20px;
-
 }
 
 .cartao-campanha__botao {
@@ -423,8 +422,28 @@ span {
         height: 688px;
         width: 100%;
     }
-
     .secao-destaque {
         padding: 48px 40px;
     }
+    .secao-estatisticas {
+    padding: 48px 40px;
+    }
+    .secao-historias {
+    padding: 0 40px;
+    }
+    .cartao-campanha {
+        display: flex;
+        gap: 24px;
+    }
+    .cartao-campanha__conteudo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .secao-campanhas {
+        padding: 48px 40px;
+    }
+
 }

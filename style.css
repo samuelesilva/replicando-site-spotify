@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-   background-color:  rgb(17, 17, 17);
+    background-color: rgb(17, 17, 17);
 }
 
 span {
@@ -123,7 +123,6 @@ span {
 }
 
 .secao-estatisticas__descricao {
-    margin: 0;
     line-height: 25.6px;
 }
 
@@ -143,7 +142,7 @@ span {
     padding: 48px 24px;
 }
 
-.swiper { 
+.swiper {
     width: 100%;
     height: 455px;
 }
@@ -218,7 +217,7 @@ span {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 30px;  
+    margin-top: 30px;
 }
 
 .controles-navegacao__botao {
@@ -294,7 +293,7 @@ span {
     background-color: rgb(34, 34, 34);
 }
 
-.swiper-dois { 
+.swiper-dois {
     width: 100%;
 }
 
@@ -382,6 +381,9 @@ span {
 .cartao-campanha {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .cartao-campanha__imagem {
@@ -393,8 +395,7 @@ span {
 }
 
 .cartao-campanha__conteudo {
-    padding-bottom: 60px;
-    
+    padding-bottom: 40px;
 }
 
 .cartao-campanha__titulo {
@@ -414,27 +415,152 @@ span {
     box-sizing: border-box;
 }
 
+.secao-spotify-ad {
+    padding: 0 24px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.secao-spotify-ad_info {
+    padding: 24px 16px;
+    box-sizing: border-box;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.secao-spotify-ad_titulo {
+    font-size: 30px;
+}
+
+.secao-spotify-ad_paragrafo {
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.secao-spotify-ad_img {
+    width: 100%;
+    height: auto;
+}
+
+.secao-spotify-ad_botao {
+    width: 122px;
+    margin-bottom: 15px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 800;
+}
+
+.secao-receba-noticias {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 24px;
+}
+
+.receba-noticias_titulo{
+    font-size: 40px;
+    font-weight: 400;
+}
+.receba-noticias_paragrafo{
+    line-height: 25px;
+}
+
+.receba-noticias_botao {
+   border-radius: 50px;
+   border: none;
+   font-weight: 800;
+   width: 108px;
+   height: 40px;
+}
+
+
+.noticias-carrossel_card {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   min-height: 390px;
+   margin-top: 40px;
+}
+
+.cor-de-fundo-amarelo{
+   background-color: rgb(255, 200, 98);
+}
+
+.noticias-carrossel_flag{
+   position: absolute;
+   padding: 12px 24px;
+   font-size: 16px;
+   color: black;
+   font-weight: 700;
+   top: 12px;
+   left: 12px;
+   border-radius: 50px;
+}
+
+.carrosel-card-img {
+    width: 312px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.carrosel-card {
+    width: 312px;
+    height: 160px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.carrosel-texto{
+    font-size: 24px;
+    margin: 0 0 10px ;
+    color:black;
+}
+
+.seta-carrosel {
+    width: 25px;
+}
+
+.receba-noticias_carrossel {
+    display: flex;
+    overflow-y: scroll;
+}
+
+.cor-de-fundo-verde {
+   background-color: rgb(149, 201, 13)
+}
+
+
 /* =========================================
    Responsividade
    ========================================= */
+
 @media screen and (min-width: 768px) {
     .secao-destaque__video {
         height: 688px;
         width: 100%;
     }
+
     .secao-destaque {
         padding: 48px 40px;
     }
+
     .secao-estatisticas {
-    padding: 48px 40px;
+        padding: 48px 40px;
     }
+
     .secao-historias {
-    padding: 0 40px;
+        padding: 0 40px;
     }
+
     .cartao-campanha {
-        display: flex;
+        flex-direction: row;
         gap: 24px;
     }
+
     .cartao-campanha__conteudo {
         display: flex;
         justify-content: center;
@@ -442,8 +568,14 @@ span {
         padding: 10px;
         box-sizing: border-box;
     }
-    .secao-campanhas {
+
+    .secao-campanhas,
+    .secao-spotify-ad {
         padding: 48px 40px;
+    }
+
+    .secao-spotify-ad_info {
+        padding: 24px 16px;
     }
 
 }

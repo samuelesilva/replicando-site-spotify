@@ -513,7 +513,6 @@ span {
     margin-top: 40px;
 }
 
-
 .noticias-carrossel_flag {
     position: absolute;
     padding: 12px 24px;
@@ -599,10 +598,19 @@ span {
     height: 342px;
     margin: 0 auto;
     display: block;
-
 }
 
+.secao-referencia {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 24px;
+    font-size: 15px;
+    color: rgb(141, 141, 141);
+}
 
+.info-referencia {
+    margin: 6px 0;
+    line-height: 20px;
+}
 
 /* =========================================
    Responsividade
@@ -647,5 +655,4 @@ span {
     .secao-spotify-ad_info {
         padding: 24px 16px;
     }
-
 }
